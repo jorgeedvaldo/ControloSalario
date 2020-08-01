@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBE7EE31-7499-4F50-8773-2BC1097549AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControloSalario</RootNamespace>
+    <AssemblyName>ControloSalario</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EdvFramework">
+      <HintPath>..\..\SistemaGestaoPastelaria\SistemaGestaoPastelaria\bin\Debug\EdvFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\..\Downloads\MaterialSkin\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\SistemaGestaoPastelaria\SistemaGestaoPastelaria\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\SistemaGestaoPastelaria\SistemaGestaoPastelaria\bin\Debug\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\SistemaGestaoPastelaria\SistemaGestaoPastelaria\bin\Debug\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bd.cs" />
+    <Compile Include="FrmCarregamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarregamento.Designer.cs">
+      <DependentUpon>FrmCarregamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarUsuario.Designer.cs">
+      <DependentUpon>FrmConsultarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlocarMissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlocarMissao.Designer.cs">
+      <DependentUpon>FrmAlocarMissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroAgente.Designer.cs">
+      <DependentUpon>FrmCadastroAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroMissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroMissao.Designer.cs">
+      <DependentUpon>FrmCadastroMissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroSalario.Designer.cs">
+      <DependentUpon>FrmCadastroSalario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroUsuario.Designer.cs">
+      <DependentUpon>FrmCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarAgente.Designer.cs">
+      <DependentUpon>FrmConsultarAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarMissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarMissao.Designer.cs">
+      <DependentUpon>FrmConsultarMissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultarSalarioLancado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarSalarioLancado.Designer.cs">
+      <DependentUpon>FrmConsultarSalarioLancado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLancarSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLancarSalario.Designer.cs">
+      <DependentUpon>FrmLancarSalario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCadastroAgente.resx">
+      <DependentUpon>FrmCadastroAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroMissao.resx">
+      <DependentUpon>FrmCadastroMissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroSalario.resx">
+      <DependentUpon>FrmCadastroSalario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroUsuario.resx">
+      <DependentUpon>FrmCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarregamento.resx">
+      <DependentUpon>FrmCarregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarAgente.resx">
+      <DependentUpon>FrmConsultarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarMissao.resx">
+      <DependentUpon>FrmConsultarMissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarUsuario.resx">
+      <DependentUpon>FrmConsultarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoliciaLogoTratado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data Configuration_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Group Woman Man_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_Collaborator Male_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Client_Ratings_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collaborator_Ratings_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data Configuration_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Property_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find User Female_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_Collaborator Male_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-filled-circle-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-90 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key 2_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock 2_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_Collaborator Male_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maintenance_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitor_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MS Excel_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MS Word_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Page Overview _48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Source Code_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-07-12 at 08.54.12.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
