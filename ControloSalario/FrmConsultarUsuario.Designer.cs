@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -66,17 +65,9 @@
             this.cbPesquisa.Items.AddRange(new object[] {
             "Mostrar Tudo",
             "Id",
-            "NumeroAgente",
-            "NumeroGuia",
-            "Nome",
-            "Sexo",
-            "BI",
-            "DataNascimento",
-            "DataIngresso",
-            "Patente",
-            "Telefone1",
-            "Telefone2",
-            "Morada"});
+            "NomeUsuario",
+            "Senha",
+            "Cargo"});
             this.cbPesquisa.Location = new System.Drawing.Point(13, 109);
             this.cbPesquisa.Name = "cbPesquisa";
             this.cbPesquisa.Size = new System.Drawing.Size(344, 21);
@@ -106,7 +97,7 @@
             // 
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(129, 360);
+            this.btnLimpar.Location = new System.Drawing.Point(11, 360);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(110, 32);
             this.btnLimpar.TabIndex = 68;
@@ -114,23 +105,11 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(13, 360);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(110, 32);
-            this.btnSalvar.TabIndex = 66;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(245, 360);
+            this.btnCancelar.Location = new System.Drawing.Point(127, 360);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(110, 32);
             this.btnCancelar.TabIndex = 67;
@@ -149,9 +128,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmConsultarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConsultarUsuario";
             this.Load += new System.EventHandler(this.FrmConsultarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -168,7 +148,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
     }
 }
