@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace ControloSalario
 {
-    public partial class FrmConsultarAvaliacao : Form
+    public partial class FrmConsultarEfectivoDoente : Form
     {
-        public FrmConsultarAvaliacao()
+        public FrmConsultarEfectivoDoente()
         {
             InitializeComponent();
         }
 
         private void FrmConsultarAvaliacao_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = Bd.Executar("SELECT * FROM VerEfectivoAvaliado");
+            dataGridView1.DataSource = Bd.Executar("SELECT * FROM VerEfectivoDoente");
             cbPesquisa.SelectedIndex = 0;
         }
 
@@ -27,10 +27,10 @@ namespace ControloSalario
         {
             if (cbPesquisa.Text == "Mostrar Tudo")
             {
-                dataGridView1.DataSource = Bd.Executar("SELECT * FROM VerEfectivoAvaliado");
+                dataGridView1.DataSource = Bd.Executar("SELECT * FROM VerEfectivoDoente");
                 return;
             }
-            dataGridView1.DataSource = Bd.Executar("SELECT * FROM VerEfectivoAvaliado WHERE " + cbPesquisa.Text + " LIKE '" + txtPesquisa.Text + "%'");
+            dataGridView1.DataSource = Bd.Executar("SELECT * FROM VerEfectivoDoente WHERE " + cbPesquisa.Text + " LIKE '" + txtPesquisa.Text + "%'");
         }
 
         private void cbPesquisa_SelectedIndexChanged(object sender, EventArgs e)

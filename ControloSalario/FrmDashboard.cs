@@ -68,5 +68,39 @@ namespace ControloSalario
             FrmEfectivoAvaliado frm = new FrmEfectivoAvaliado();
             frm.ShowDialog();
         }
+
+        private void BtnEfectuarEncomenda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmLancarFerias frm = new FrmLancarFerias();
+            frm.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            FrmConsultarAgentesDeFerias frm = new FrmConsultarAgentesDeFerias();
+            frm.ShowDialog();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

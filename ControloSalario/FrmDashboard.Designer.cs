@@ -31,11 +31,8 @@
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnSistemaFechar = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnSistemaFechar = new System.Windows.Forms.Button();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
@@ -46,6 +43,11 @@
             this.button6 = new System.Windows.Forms.Button();
             this.BtnClientesCadastrar = new System.Windows.Forms.Button();
             this.BtnClientesConsultar = new System.Windows.Forms.Button();
+            this.metroTabPage7 = new MetroFramework.Controls.MetroTabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnCadastrarFuncionario = new System.Windows.Forms.Button();
@@ -53,13 +55,12 @@
             this.button8 = new System.Windows.Forms.Button();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnAvaliarAgente = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.BtnEfectuarEncomenda = new System.Windows.Forms.Button();
             this.BtnEfectuarVenda = new System.Windows.Forms.Button();
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
-            this.BtnAvaliarAgente = new System.Windows.Forms.Button();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -67,6 +68,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.metroTabPage7.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
@@ -80,13 +83,14 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
+            this.metroTabControl1.Controls.Add(this.metroTabPage7);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Controls.Add(this.metroTabPage6);
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 4;
+            this.metroTabControl1.SelectedIndex = 6;
             this.metroTabControl1.Size = new System.Drawing.Size(935, 136);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
@@ -111,16 +115,13 @@
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel5.ColumnCount = 5;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.tableLayoutPanel5.Controls.Add(this.BtnSistemaFechar, 4, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button4, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button18, 3, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button9, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button3, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.button18, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.BtnSistemaFechar, 1, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 8);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -128,41 +129,6 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(680, 82);
             this.tableLayoutPanel5.TabIndex = 4;
-            // 
-            // BtnSistemaFechar
-            // 
-            this.BtnSistemaFechar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnSistemaFechar.FlatAppearance.BorderSize = 0;
-            this.BtnSistemaFechar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.BtnSistemaFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnSistemaFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSistemaFechar.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.BtnSistemaFechar.Image = global::ControloSalario.Properties.Resources.Cancel_96px;
-            this.BtnSistemaFechar.Location = new System.Drawing.Point(566, 3);
-            this.BtnSistemaFechar.Name = "BtnSistemaFechar";
-            this.BtnSistemaFechar.Size = new System.Drawing.Size(99, 70);
-            this.BtnSistemaFechar.TabIndex = 3;
-            this.BtnSistemaFechar.Text = "Fechar Aplicação";
-            this.BtnSistemaFechar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnSistemaFechar.UseVisualStyleBackColor = false;
-            this.BtnSistemaFechar.Click += new System.EventHandler(this.BtnSistemaFechar_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.button4.Image = global::ControloSalario.Properties.Resources.Picture_96px;
-            this.button4.Location = new System.Drawing.Point(192, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 70);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Alterar Foto";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // button18
             // 
@@ -173,47 +139,32 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.Font = new System.Drawing.Font("Segoe UI Light", 9F);
             this.button18.Image = global::ControloSalario.Properties.Resources.Exit_96px;
-            this.button18.Location = new System.Drawing.Point(443, 3);
+            this.button18.Location = new System.Drawing.Point(3, 3);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(98, 70);
             this.button18.TabIndex = 4;
             this.button18.Text = "Terminar Sessão";
             this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
-            // button9
+            // BtnSistemaFechar
             // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.button9.Image = global::ControloSalario.Properties.Resources.Lock_2_96px;
-            this.button9.Location = new System.Drawing.Point(315, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(110, 70);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Alterar Senha";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.button3.Image = global::ControloSalario.Properties.Resources.Data_Configuration_96px;
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 70);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Configurar Base de Dados";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnSistemaFechar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSistemaFechar.FlatAppearance.BorderSize = 0;
+            this.BtnSistemaFechar.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.BtnSistemaFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnSistemaFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSistemaFechar.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.BtnSistemaFechar.Image = global::ControloSalario.Properties.Resources.Cancel_96px;
+            this.BtnSistemaFechar.Location = new System.Drawing.Point(115, 3);
+            this.BtnSistemaFechar.Name = "BtnSistemaFechar";
+            this.BtnSistemaFechar.Size = new System.Drawing.Size(99, 70);
+            this.BtnSistemaFechar.TabIndex = 3;
+            this.BtnSistemaFechar.Text = "Fechar Aplicação";
+            this.BtnSistemaFechar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnSistemaFechar.UseVisualStyleBackColor = false;
+            this.BtnSistemaFechar.Click += new System.EventHandler(this.BtnSistemaFechar_Click);
             // 
             // metroTabPage1
             // 
@@ -392,6 +343,94 @@
             this.BtnClientesConsultar.UseVisualStyleBackColor = false;
             this.BtnClientesConsultar.Click += new System.EventHandler(this.BtnClientesConsultar_Click);
             // 
+            // metroTabPage7
+            // 
+            this.metroTabPage7.Controls.Add(this.tableLayoutPanel7);
+            this.metroTabPage7.HorizontalScrollbarBarColor = true;
+            this.metroTabPage7.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage7.HorizontalScrollbarSize = 10;
+            this.metroTabPage7.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage7.Name = "metroTabPage7";
+            this.metroTabPage7.Size = new System.Drawing.Size(927, 94);
+            this.metroTabPage7.TabIndex = 6;
+            this.metroTabPage7.Text = "Férias";
+            this.metroTabPage7.VerticalScrollbarBarColor = true;
+            this.metroTabPage7.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage7.VerticalScrollbarSize = 10;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel7.Controls.Add(this.button1, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button7, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button11, 1, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(416, 82);
+            this.tableLayoutPanel7.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.button1.Image = global::ControloSalario.Properties.Resources.Page_Overview__48px;
+            this.button1.Location = new System.Drawing.Point(280, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 70);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Imprimir Relatório";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.button7.Image = global::ControloSalario.Properties.Resources.Plus_48px;
+            this.button7.Location = new System.Drawing.Point(3, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(121, 70);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "Pedir Férias";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.button11.Image = global::ControloSalario.Properties.Resources.Search_48px;
+            this.button11.Location = new System.Drawing.Point(142, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(119, 70);
+            this.button11.TabIndex = 2;
+            this.button11.Text = "Agentes em Férias";
+            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // metroTabPage3
             // 
             this.metroTabPage3.Controls.Add(this.tableLayoutPanel4);
@@ -436,6 +475,7 @@
             this.BtnCadastrarFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnCadastrarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCadastrarFuncionario.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.BtnCadastrarFuncionario.Image = global::ControloSalario.Properties.Resources.lock_Collaborator_Male_96px;
             this.BtnCadastrarFuncionario.Location = new System.Drawing.Point(3, 3);
             this.BtnCadastrarFuncionario.Name = "BtnCadastrarFuncionario";
             this.BtnCadastrarFuncionario.Size = new System.Drawing.Size(94, 70);
@@ -453,6 +493,7 @@
             this.BtnConsultarFuncionario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnConsultarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConsultarFuncionario.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.BtnConsultarFuncionario.Image = global::ControloSalario.Properties.Resources.Find_User_Female_96px;
             this.BtnConsultarFuncionario.Location = new System.Drawing.Point(128, 3);
             this.BtnConsultarFuncionario.Name = "BtnConsultarFuncionario";
             this.BtnConsultarFuncionario.Size = new System.Drawing.Size(170, 70);
@@ -470,6 +511,7 @@
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.button8.Image = global::ControloSalario.Properties.Resources.Page_Overview__48px;
             this.button8.Location = new System.Drawing.Point(313, 3);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(124, 70);
@@ -477,6 +519,7 @@
             this.button8.Text = "Imprimir Relatório";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // metroTabPage4
             // 
@@ -499,12 +542,11 @@
             this.tableLayoutPanel3.ColumnCount = 5;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
             this.tableLayoutPanel3.Controls.Add(this.BtnAvaliarAgente, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.button10, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.BtnEfectuarEncomenda, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.BtnEfectuarVenda, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 8);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -514,6 +556,24 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(704, 82);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
+            // BtnAvaliarAgente
+            // 
+            this.BtnAvaliarAgente.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAvaliarAgente.FlatAppearance.BorderSize = 0;
+            this.BtnAvaliarAgente.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.BtnAvaliarAgente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAvaliarAgente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAvaliarAgente.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.BtnAvaliarAgente.Image = global::ControloSalario.Properties.Resources.Edit_Property_48px1;
+            this.BtnAvaliarAgente.Location = new System.Drawing.Point(107, 3);
+            this.BtnAvaliarAgente.Name = "BtnAvaliarAgente";
+            this.BtnAvaliarAgente.Size = new System.Drawing.Size(125, 70);
+            this.BtnAvaliarAgente.TabIndex = 4;
+            this.BtnAvaliarAgente.Text = "Avaliar Agente";
+            this.BtnAvaliarAgente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnAvaliarAgente.UseVisualStyleBackColor = false;
+            this.BtnAvaliarAgente.Click += new System.EventHandler(this.BtnAvaliarAgente_Click);
+            // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.Transparent;
@@ -522,29 +582,14 @@
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.button10.Location = new System.Drawing.Point(418, 3);
+            this.button10.Image = global::ControloSalario.Properties.Resources.collaborator_Ratings_96px;
+            this.button10.Location = new System.Drawing.Point(238, 3);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(125, 70);
+            this.button10.Size = new System.Drawing.Size(146, 70);
             this.button10.TabIndex = 3;
             this.button10.Text = "Alocar Agente na Missão";
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button10.UseVisualStyleBackColor = false;
-            // 
-            // BtnEfectuarEncomenda
-            // 
-            this.BtnEfectuarEncomenda.BackColor = System.Drawing.Color.Transparent;
-            this.BtnEfectuarEncomenda.FlatAppearance.BorderSize = 0;
-            this.BtnEfectuarEncomenda.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.BtnEfectuarEncomenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnEfectuarEncomenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEfectuarEncomenda.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.BtnEfectuarEncomenda.Location = new System.Drawing.Point(238, 3);
-            this.BtnEfectuarEncomenda.Name = "BtnEfectuarEncomenda";
-            this.BtnEfectuarEncomenda.Size = new System.Drawing.Size(122, 70);
-            this.BtnEfectuarEncomenda.TabIndex = 2;
-            this.BtnEfectuarEncomenda.Text = "Alocar Estagiário";
-            this.BtnEfectuarEncomenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnEfectuarEncomenda.UseVisualStyleBackColor = false;
             // 
             // BtnEfectuarVenda
             // 
@@ -554,6 +599,7 @@
             this.BtnEfectuarVenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnEfectuarVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEfectuarVenda.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.BtnEfectuarVenda.Image = global::ControloSalario.Properties.Resources.Refund_48px;
             this.BtnEfectuarVenda.Location = new System.Drawing.Point(3, 3);
             this.BtnEfectuarVenda.Name = "BtnEfectuarVenda";
             this.BtnEfectuarVenda.Size = new System.Drawing.Size(94, 70);
@@ -582,14 +628,14 @@
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.tableLayoutPanel6.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel6.Controls.Add(this.button2, 0, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 8);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(219, 82);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(208, 82);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // button2
@@ -600,30 +646,15 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.button2.Location = new System.Drawing.Point(92, 3);
+            this.button2.Image = global::ControloSalario.Properties.Resources.Info_48px1;
+            this.button2.Location = new System.Drawing.Point(3, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 70);
+            this.button2.Size = new System.Drawing.Size(105, 70);
             this.button2.TabIndex = 0;
             this.button2.Text = "Sobre a Aplicação";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // BtnAvaliarAgente
-            // 
-            this.BtnAvaliarAgente.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAvaliarAgente.FlatAppearance.BorderSize = 0;
-            this.BtnAvaliarAgente.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.BtnAvaliarAgente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnAvaliarAgente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAvaliarAgente.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.BtnAvaliarAgente.Location = new System.Drawing.Point(107, 3);
-            this.BtnAvaliarAgente.Name = "BtnAvaliarAgente";
-            this.BtnAvaliarAgente.Size = new System.Drawing.Size(125, 70);
-            this.BtnAvaliarAgente.TabIndex = 4;
-            this.BtnAvaliarAgente.Text = "Avaliar Agente";
-            this.BtnAvaliarAgente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnAvaliarAgente.UseVisualStyleBackColor = false;
-            this.BtnAvaliarAgente.Click += new System.EventHandler(this.BtnAvaliarAgente_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FrmDashboard
             // 
@@ -645,6 +676,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.metroTabPage2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.metroTabPage7.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             this.metroTabPage3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.metroTabPage4.ResumeLayout(false);
@@ -661,10 +694,7 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button BtnSistemaFechar;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button3;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button5;
@@ -683,11 +713,15 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button BtnEfectuarEncomenda;
         private System.Windows.Forms.Button BtnEfectuarVenda;
         private MetroFramework.Controls.MetroTabPage metroTabPage6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnAvaliarAgente;
+        private MetroFramework.Controls.MetroTabPage metroTabPage7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button11;
     }
 }

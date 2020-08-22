@@ -26,3 +26,5 @@ C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSala
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmEfectivoDoente.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmEfectivoAvaliado.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarAvaliacao.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarEfectivoDoente.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarAgentesDeFerias.resources

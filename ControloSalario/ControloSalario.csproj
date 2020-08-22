@@ -74,6 +74,12 @@
     <Compile Include="FrmConsultarAvaliacao.Designer.cs">
       <DependentUpon>FrmConsultarAvaliacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultarEfectivoDoente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarEfectivoDoente.Designer.cs">
+      <DependentUpon>FrmConsultarEfectivoDoente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,12 @@
     <Compile Include="FrmLancarFerias.Designer.cs">
       <DependentUpon>FrmLancarFerias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultarAgentesDeFerias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarAgentesDeFerias.Designer.cs">
+      <DependentUpon>FrmConsultarAgentesDeFerias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCadastroAgente.resx">
@@ -192,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarAvaliacao.resx">
       <DependentUpon>FrmConsultarAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarEfectivoDoente.resx">
+      <DependentUpon>FrmConsultarEfectivoDoente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarMissao.resx">
       <DependentUpon>FrmConsultarMissao.cs</DependentUpon>
@@ -216,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLancarFerias.resx">
       <DependentUpon>FrmLancarFerias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarAgentesDeFerias.resx">
+      <DependentUpon>FrmConsultarAgentesDeFerias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -341,6 +359,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2020-07-12 at 08.54.12.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Property_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refund_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_48px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
