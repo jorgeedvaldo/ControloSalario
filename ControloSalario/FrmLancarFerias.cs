@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ControloSalario
 {
-    public partial class LancarFerias : Form
+    public partial class FrmLancarFerias : Form
     {
-        public LancarFerias()
+        public FrmLancarFerias()
         {
             InitializeComponent();
         }
@@ -37,8 +37,8 @@ namespace ControloSalario
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 Convert.ToInt32(TxtDias.Text);
                 if (TxtDias.Text == "")
                 {
@@ -50,11 +50,11 @@ namespace ControloSalario
                     MessageBox.Show("Férias lançadas com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnLimpar_Click(null, null);                  
                 }
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Verifique se todos os campos foram preenchidos correctamente!");
-            //}
+            }
+            catch
+            {
+                MessageBox.Show("Verifique se todos os campos foram preenchidos correctamente!");
+            }
         }
 
         private void CbAgente_SelectedIndexChanged(object sender, EventArgs e)

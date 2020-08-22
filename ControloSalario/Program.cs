@@ -16,7 +16,7 @@ namespace ControloSalario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LancarFerias());
+            Application.Run(new FrmEfectivoDoente());
         }
     }
 }

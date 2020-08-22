@@ -1,6 +1,6 @@
 ﻿namespace ControloSalario
 {
-    partial class LancarFerias
+    partial class FrmLancarFerias
     {
         /// <summary>
         /// Required designer variable.
@@ -192,7 +192,7 @@
             this.LbPatente.TabIndex = 62;
             this.LbPatente.Text = "Nenhum Escolhido";
             // 
-            // LancarFerias
+            // FrmLancarFerias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -210,7 +210,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CbAgente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "LancarFerias";
+            this.Name = "FrmLancarFerias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lançar Ferias";
             this.Load += new System.EventHandler(this.LancarFerias_Load);

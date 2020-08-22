@@ -80,6 +80,12 @@
     <Compile Include="FrmDashboard.Designer.cs">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEfectivoDoente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEfectivoDoente.Designer.cs">
+      <DependentUpon>FrmEfectivoDoente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,11 +152,11 @@
     <Compile Include="FrmLancarSalario.Designer.cs">
       <DependentUpon>FrmLancarSalario.cs</DependentUpon>
     </Compile>
-    <Compile Include="LancarFerias.cs">
+    <Compile Include="FrmLancarFerias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LancarFerias.Designer.cs">
-      <DependentUpon>LancarFerias.cs</DependentUpon>
+    <Compile Include="FrmLancarFerias.Designer.cs">
+      <DependentUpon>FrmLancarFerias.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -181,14 +187,17 @@
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEfectivoDoente.resx">
+      <DependentUpon>FrmEfectivoDoente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LancarFerias.resx">
-      <DependentUpon>LancarFerias.cs</DependentUpon>
+    <EmbeddedResource Include="FrmLancarFerias.resx">
+      <DependentUpon>FrmLancarFerias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
