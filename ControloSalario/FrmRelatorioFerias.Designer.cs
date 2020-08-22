@@ -1,6 +1,6 @@
 ﻿namespace ControloSalario
 {
-    partial class FrmRelatorioAvaliacao
+    partial class FrmRelatorioFerias
     {
         /// <summary>
         /// Required designer variable.
@@ -32,22 +32,22 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.BdControloSalarioDataSet = new ControloSalario.BdControloSalarioDataSet();
-            this.VerEfectivoAvaliadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.VerEfectivoAvaliadoTableAdapter = new ControloSalario.BdControloSalarioDataSetTableAdapters.VerEfectivoAvaliadoTableAdapter();
+            this.VerAgentesDeFeriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.VerAgentesDeFeriasTableAdapter = new ControloSalario.BdControloSalarioDataSetTableAdapters.VerAgentesDeFeriasTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.BdControloSalarioDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerEfectivoAvaliadoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VerAgentesDeFeriasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.VerEfectivoAvaliadoBindingSource;
+            reportDataSource1.Value = this.VerAgentesDeFeriasBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ControloSalario.Report1.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ControloSalario.Report3.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(731, 580);
+            this.reportViewer1.Size = new System.Drawing.Size(796, 536);
             this.reportViewer1.TabIndex = 0;
             // 
             // BdControloSalarioDataSet
@@ -55,26 +55,26 @@
             this.BdControloSalarioDataSet.DataSetName = "BdControloSalarioDataSet";
             this.BdControloSalarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // VerEfectivoAvaliadoBindingSource
+            // VerAgentesDeFeriasBindingSource
             // 
-            this.VerEfectivoAvaliadoBindingSource.DataMember = "VerEfectivoAvaliado";
-            this.VerEfectivoAvaliadoBindingSource.DataSource = this.BdControloSalarioDataSet;
+            this.VerAgentesDeFeriasBindingSource.DataMember = "VerAgentesDeFerias";
+            this.VerAgentesDeFeriasBindingSource.DataSource = this.BdControloSalarioDataSet;
             // 
-            // VerEfectivoAvaliadoTableAdapter
+            // VerAgentesDeFeriasTableAdapter
             // 
-            this.VerEfectivoAvaliadoTableAdapter.ClearBeforeFill = true;
+            this.VerAgentesDeFeriasTableAdapter.ClearBeforeFill = true;
             // 
-            // FrmRelatorioAvaliacao
+            // FrmRelatorioFerias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 580);
+            this.ClientSize = new System.Drawing.Size(796, 536);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FrmRelatorioAvaliacao";
-            this.Text = "FrmRelatorioAvaliacao";
-            this.Load += new System.EventHandler(this.FrmRelatorioAvaliacao_Load);
+            this.Name = "FrmRelatorioFerias";
+            this.Text = "FrmRelatorioFerias";
+            this.Load += new System.EventHandler(this.FrmRelatorioFerias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BdControloSalarioDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.VerEfectivoAvaliadoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VerAgentesDeFeriasBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -82,8 +82,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource VerEfectivoAvaliadoBindingSource;
+        private System.Windows.Forms.BindingSource VerAgentesDeFeriasBindingSource;
         private BdControloSalarioDataSet BdControloSalarioDataSet;
-        private BdControloSalarioDataSetTableAdapters.VerEfectivoAvaliadoTableAdapter VerEfectivoAvaliadoTableAdapter;
+        private BdControloSalarioDataSetTableAdapters.VerAgentesDeFeriasTableAdapter VerAgentesDeFeriasTableAdapter;
     }
 }

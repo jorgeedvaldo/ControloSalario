@@ -19,6 +19,8 @@ namespace ControloSalario
 
         private void FrmRelatorioAvaliacao_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'BdControloSalarioDataSet.VerEfectivoAvaliado' table. You can move, or remove it, as needed.
+            this.VerEfectivoAvaliadoTableAdapter.Fill(this.BdControloSalarioDataSet.VerEfectivoAvaliado);
 
             this.reportViewer1.RefreshReport();
         }

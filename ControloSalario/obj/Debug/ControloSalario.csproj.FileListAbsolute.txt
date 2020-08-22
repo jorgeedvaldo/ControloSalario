@@ -30,3 +30,7 @@ C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSala
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmRelatorioAvaliacao.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\RdlCompile.cache
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\RdlCompile.compiled
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmRelatorioAgentes.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmRelatorioFerias.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmRelatorioMissao.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmRelatorioUsuario.resources

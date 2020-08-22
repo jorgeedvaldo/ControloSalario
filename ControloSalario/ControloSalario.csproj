@@ -184,11 +184,35 @@
     <Compile Include="FrmConsultarAgentesDeFerias.Designer.cs">
       <DependentUpon>FrmConsultarAgentesDeFerias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRelatorioAgentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioAgentes.Designer.cs">
+      <DependentUpon>FrmRelatorioAgentes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRelatorioAvaliacao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRelatorioAvaliacao.Designer.cs">
       <DependentUpon>FrmRelatorioAvaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorioFerias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioFerias.Designer.cs">
+      <DependentUpon>FrmRelatorioFerias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorioMissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioMissao.Designer.cs">
+      <DependentUpon>FrmRelatorioMissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorioUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioUsuario.Designer.cs">
+      <DependentUpon>FrmRelatorioUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -240,8 +264,20 @@
     <EmbeddedResource Include="FrmConsultarAgentesDeFerias.resx">
       <DependentUpon>FrmConsultarAgentesDeFerias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioAgentes.resx">
+      <DependentUpon>FrmRelatorioAgentes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRelatorioAvaliacao.resx">
       <DependentUpon>FrmRelatorioAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioFerias.resx">
+      <DependentUpon>FrmRelatorioFerias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioMissao.resx">
+      <DependentUpon>FrmRelatorioMissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioUsuario.resx">
+      <DependentUpon>FrmRelatorioUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -254,6 +290,10 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
     <None Include="BdControloSalarioDataSet.xsc">
       <DependentUpon>BdControloSalarioDataSet.xsd</DependentUpon>
     </None>
