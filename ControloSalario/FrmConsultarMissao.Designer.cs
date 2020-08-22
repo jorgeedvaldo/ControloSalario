@@ -87,9 +87,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(16, 23);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
+            this.label3.Size = new System.Drawing.Size(139, 16);
             this.label3.TabIndex = 70;
-            this.label3.Text = "Nome";
+            this.label3.Text = "Digite a sua Pesquisa";
             // 
             // txtPesquisa
             // 
@@ -150,7 +150,7 @@
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
             this.Name = "FrmConsultarMissao";
-            this.Text = "FrmConsultarMissao";
+            this.Text = "Consultar Missão";
             this.Load += new System.EventHandler(this.FrmConsultarMissao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

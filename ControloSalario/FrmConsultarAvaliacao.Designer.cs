@@ -1,6 +1,6 @@
 ﻿namespace ControloSalario
 {
-    partial class FrmConsultarUsuario
+    partial class FrmConsultarAvaliacao
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +44,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(375, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(418, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(548, 353);
@@ -52,7 +53,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 93);
+            this.label4.Location = new System.Drawing.Point(19, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 13);
             this.label4.TabIndex = 72;
@@ -65,20 +66,27 @@
             this.cbPesquisa.Items.AddRange(new object[] {
             "Mostrar Tudo",
             "Id",
-            "NomeUsuario",
-            "Senha",
-            "Cargo"});
-            this.cbPesquisa.Location = new System.Drawing.Point(13, 109);
+            "NumeroAgente",
+            "NumeroGuia",
+            "Nome",
+            "Sexo",
+            "BI",
+            "DataNascimento",
+            "DataIngresso",
+            "Patente",
+            "Telefone1",
+            "Telefone2",
+            "Morada"});
+            this.cbPesquisa.Location = new System.Drawing.Point(22, 123);
             this.cbPesquisa.Name = "cbPesquisa";
             this.cbPesquisa.Size = new System.Drawing.Size(344, 21);
             this.cbPesquisa.TabIndex = 71;
-            this.cbPesquisa.SelectedIndexChanged += new System.EventHandler(this.cbPesquisa_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(10, 20);
+            this.label3.Location = new System.Drawing.Point(19, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 16);
             this.label3.TabIndex = 70;
@@ -87,53 +95,60 @@
             // txtPesquisa
             // 
             this.txtPesquisa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPesquisa.Location = new System.Drawing.Point(13, 39);
+            this.txtPesquisa.Location = new System.Drawing.Point(22, 53);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(344, 20);
             this.txtPesquisa.TabIndex = 69;
-            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // btnLimpar
             // 
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(11, 360);
+            this.btnLimpar.Location = new System.Drawing.Point(138, 374);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(110, 32);
             this.btnLimpar.TabIndex = 68;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(22, 374);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(110, 32);
+            this.btnSalvar.TabIndex = 66;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(127, 360);
+            this.btnCancelar.Location = new System.Drawing.Point(254, 374);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(110, 32);
             this.btnCancelar.TabIndex = 67;
             this.btnCancelar.Text = "Fechar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // FrmConsultarUsuario
+            // FrmConsultarAvaliacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 421);
+            this.ClientSize = new System.Drawing.Size(984, 440);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbPesquisa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FrmConsultarUsuario";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmConsultarUsuario";
-            this.Load += new System.EventHandler(this.FrmConsultarUsuario_Load);
+            this.Name = "FrmConsultarAvaliacao";
+            this.Text = "Consultar Avaliação";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -148,6 +163,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
     }
 }

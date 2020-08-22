@@ -19,7 +19,7 @@ namespace ControloSalario
 
         public void ActualizarCbAgente()
         {
-            cbAgente.DataSource = Bd.Executar("SELECT * FROM Agente WHERE Agente.Id NOT IN(SELECT IdAgente FROM VerMissao WHERE Estado = 'A decorrer' OR Estado = 'Prestes a iniciar');");
+            cbAgente.DataSource = Bd.Executar("SELECT * FROM Agente WHERE Agente.Id NOT IN(SELECT IdAgente FROM VerMissao WHERE Estado = 'A decorrer' OR Estado = 'Prestes a iniciar') AND Agente.Id NOT IN(SELECT IdAgente FROM VerAgentesDeFerias);");
         }
 
         private void FrmCadastroMissao_Load(object sender, EventArgs e)

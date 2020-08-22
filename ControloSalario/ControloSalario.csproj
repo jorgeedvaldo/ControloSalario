@@ -68,6 +68,12 @@
     <Compile Include="FrmCarregamento.Designer.cs">
       <DependentUpon>FrmCarregamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsultarAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultarAvaliacao.Designer.cs">
+      <DependentUpon>FrmConsultarAvaliacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarAgente.resx">
       <DependentUpon>FrmConsultarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarAvaliacao.resx">
+      <DependentUpon>FrmConsultarAvaliacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarMissao.resx">
       <DependentUpon>FrmConsultarMissao.cs</DependentUpon>
