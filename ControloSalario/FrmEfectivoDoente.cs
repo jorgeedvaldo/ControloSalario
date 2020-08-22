@@ -51,8 +51,8 @@ namespace ControloSalario
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 if (TxtDoencaPotencial.Text == "")
                 {
                     MessageBox.Show("Verifique se todos os campos foram preenchidos!");
@@ -63,11 +63,11 @@ namespace ControloSalario
                     MessageBox.Show("Dados inseridos com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnLimpar_Click(null, null);
                 }
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Verifique se todos os campos foram preenchidos correctamente!");
-            //}
+            }
+            catch
+            {
+                MessageBox.Show("Verifique se todos os campos foram preenchidos correctamente!");
+            }
         }
     }
 }

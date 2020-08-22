@@ -80,6 +80,12 @@
     <Compile Include="FrmDashboard.Designer.cs">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEfectivoAvaliado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEfectivoAvaliado.Designer.cs">
+      <DependentUpon>FrmEfectivoAvaliado.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEfectivoDoente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEfectivoAvaliado.resx">
+      <DependentUpon>FrmEfectivoAvaliado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEfectivoDoente.resx">
       <DependentUpon>FrmEfectivoDoente.cs</DependentUpon>
