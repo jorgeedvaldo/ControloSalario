@@ -62,5 +62,11 @@ namespace ControloSalario
         {
             metroTabControl1.SelectedIndex = 2;
         }
+
+        private void BtnAvaliarAgente_Click(object sender, EventArgs e)
+        {
+            FrmEfectivoAvaliado frm = new FrmEfectivoAvaliado();
+            frm.ShowDialog();
+        }
     }
 }

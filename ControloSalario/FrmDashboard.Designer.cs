@@ -59,6 +59,7 @@
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
+            this.BtnAvaliarAgente = new System.Windows.Forms.Button();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -85,7 +86,7 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 3;
+            this.metroTabControl1.SelectedIndex = 4;
             this.metroTabControl1.Size = new System.Drawing.Size(935, 136);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
@@ -501,6 +502,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
+            this.tableLayoutPanel3.Controls.Add(this.BtnAvaliarAgente, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.button10, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.BtnEfectuarEncomenda, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.BtnEfectuarVenda, 0, 0);
@@ -520,9 +522,9 @@
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.button10.Location = new System.Drawing.Point(238, 3);
+            this.button10.Location = new System.Drawing.Point(418, 3);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(171, 70);
+            this.button10.Size = new System.Drawing.Size(125, 70);
             this.button10.TabIndex = 3;
             this.button10.Text = "Alocar Agente na Missão";
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -536,7 +538,7 @@
             this.BtnEfectuarEncomenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
             this.BtnEfectuarEncomenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEfectuarEncomenda.Font = new System.Drawing.Font("Segoe UI Light", 9F);
-            this.BtnEfectuarEncomenda.Location = new System.Drawing.Point(107, 3);
+            this.BtnEfectuarEncomenda.Location = new System.Drawing.Point(238, 3);
             this.BtnEfectuarEncomenda.Name = "BtnEfectuarEncomenda";
             this.BtnEfectuarEncomenda.Size = new System.Drawing.Size(122, 70);
             this.BtnEfectuarEncomenda.TabIndex = 2;
@@ -606,6 +608,23 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // BtnAvaliarAgente
+            // 
+            this.BtnAvaliarAgente.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAvaliarAgente.FlatAppearance.BorderSize = 0;
+            this.BtnAvaliarAgente.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.BtnAvaliarAgente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnAvaliarAgente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAvaliarAgente.Font = new System.Drawing.Font("Segoe UI Light", 9F);
+            this.BtnAvaliarAgente.Location = new System.Drawing.Point(107, 3);
+            this.BtnAvaliarAgente.Name = "BtnAvaliarAgente";
+            this.BtnAvaliarAgente.Size = new System.Drawing.Size(125, 70);
+            this.BtnAvaliarAgente.TabIndex = 4;
+            this.BtnAvaliarAgente.Text = "Avaliar Agente";
+            this.BtnAvaliarAgente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnAvaliarAgente.UseVisualStyleBackColor = false;
+            this.BtnAvaliarAgente.Click += new System.EventHandler(this.BtnAvaliarAgente_Click);
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -669,5 +688,6 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnAvaliarAgente;
     }
 }
