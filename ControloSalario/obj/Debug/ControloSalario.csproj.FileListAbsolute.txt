@@ -22,3 +22,4 @@ C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSala
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarMissao.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarUsuario.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmDashboard.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.LancarFerias.resources

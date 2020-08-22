@@ -13,7 +13,7 @@ namespace ControloSalario
         //metodo para estabelecer a conexão com o servidor
         public static OleDbConnection Conexao()
         {
-            String conexao = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Documents\BdControloSalario.accdb";
+            String conexao = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source = BdControloSalario.accdb";
             OleDbConnection link = new OleDbConnection(conexao);
             return link;
         }
