@@ -46,5 +46,17 @@ namespace ControloSalario
             Bd.Executar("INSERT INTO EfectivoAvaliado(DataAvaliacao, Presenca, EntregaNoTrabalho, Pontualidade, IdAgente) VALUES('"+DtDataAvaliacao.Value+"', '"+CbPresencaNoTrabalho.Text+"', '"+CbEntregaNoTrabalho.Text+"', '"+CbPontualidade.Text+"', "+CbAgente.SelectedValue+")");
             MessageBox.Show("Avaliação efectuada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmConsultarAvaliacao frm = new FrmConsultarAvaliacao();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmRelatorioAvaliacao frm = new FrmRelatorioAvaliacao();
+            frm.ShowDialog();
+        }
     }
 }

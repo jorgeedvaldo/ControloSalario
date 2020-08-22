@@ -26,7 +26,7 @@ namespace ControloSalario
             if (LoginState == 1)
             {
                 FrmPrincipal.IdUsuario = Bd.Retornar("select id from usuario where nomeusuario = '"+NomeUsuario+"'");
-                FrmDashboard frm = new FrmDashboard();
+                FrmPrincipal frm = new FrmPrincipal();
                 frm.Show();
 
                 this.Hide();

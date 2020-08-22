@@ -47,10 +47,13 @@
     <Reference Include="MetroFramework.Fonts">
       <HintPath>..\..\SistemaGestaoPastelaria\SistemaGestaoPastelaria\bin\Debug\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bd.cs" />
+    <Compile Include="BdControloSalarioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BdControloSalarioDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmCarregamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +94,11 @@
     <Compile Include="FrmConsultarUsuario.Designer.cs">
       <DependentUpon>FrmConsultarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDashboard.cs">
+    <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDashboard.Designer.cs">
-      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEfectivoAvaliado.cs">
       <SubType>Form</SubType>
@@ -109,12 +117,6 @@
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAlocarMissao.cs">
       <SubType>Form</SubType>
@@ -182,6 +184,12 @@
     <Compile Include="FrmConsultarAgentesDeFerias.Designer.cs">
       <DependentUpon>FrmConsultarAgentesDeFerias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRelatorioAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioAvaliacao.Designer.cs">
+      <DependentUpon>FrmRelatorioAvaliacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCadastroAgente.resx">
@@ -214,8 +222,8 @@
     <EmbeddedResource Include="FrmConsultarUsuario.resx">
       <DependentUpon>FrmConsultarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDashboard.resx">
-      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEfectivoAvaliado.resx">
       <DependentUpon>FrmEfectivoAvaliado.cs</DependentUpon>
@@ -226,14 +234,14 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmLancarFerias.resx">
       <DependentUpon>FrmLancarFerias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarAgentesDeFerias.resx">
       <DependentUpon>FrmConsultarAgentesDeFerias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioAvaliacao.resx">
+      <DependentUpon>FrmRelatorioAvaliacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -245,6 +253,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <None Include="BdControloSalarioDataSet.xsc">
+      <DependentUpon>BdControloSalarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BdControloSalarioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BdControloSalarioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BdControloSalarioDataSet.xss">
+      <DependentUpon>BdControloSalarioDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

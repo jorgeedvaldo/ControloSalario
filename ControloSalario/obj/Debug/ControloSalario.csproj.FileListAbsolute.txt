@@ -21,10 +21,12 @@ C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSala
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarAgente.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarMissao.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarUsuario.resources
-C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmDashboard.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmLancarFerias.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmEfectivoDoente.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmEfectivoAvaliado.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarAvaliacao.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarEfectivoDoente.resources
 C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmConsultarAgentesDeFerias.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\ControloSalario.FrmRelatorioAvaliacao.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\RdlCompile.cache
+C:\Users\user\Documents\Visual Studio 2012\Projects\ControloSalario\ControloSalario\obj\Debug\RdlCompile.compiled

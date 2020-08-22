@@ -47,5 +47,11 @@ namespace ControloSalario
         {
             txtPesquisa.Clear();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRelatorioAvaliacao frm = new FrmRelatorioAvaliacao();
+            frm.ShowDialog();
+        }
     }
 }
